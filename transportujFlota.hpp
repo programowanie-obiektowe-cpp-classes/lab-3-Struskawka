@@ -25,7 +25,7 @@ while(sumarycznie<towar)
 //Dodatkowo funkcja powinna liczyć i zwracać liczbę żaglowców (tylko żaglowców, nie wszystkich statków), które stworzyła w celu przewiezienia towaru.
 
 //4. niszczy stworzony statek
-  ~stocznia() {delete sta;}
+ virtual ~stocznia() {delete sta;}
   
 }
   
@@ -33,3 +33,10 @@ return 0;
 }
 
 //**Podpowiedź**: Do sprawdzenia czy stworzony statek był żaglowcem wykorzystaj `dynamic_cast`.
+
+/*
+#ifndef FIGURE_H
+#define FIGURE
+[...]
+#endif
+*/
